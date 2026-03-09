@@ -13,7 +13,7 @@ startup: services
 host_network: true
 options:
   bind_port: 1502
-  dummy_power_w: 1000
+  dummy_power_w: "1000"
 schema:
-  bind_port: int(1,65535)
-  dummy_power_w: int(-50000,50000)
+  bind_port: port
+  dummy_power_w: str
